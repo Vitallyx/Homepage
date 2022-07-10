@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Edu";
+    src: url("/polices/Edu.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    overflow: hidden;
+    background: #0c1022;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+}
+
+main video {
+    position: absolute;
+    width: 100%;
+}
+
+.continue {
+    user-select: none;
+    z-index: 10;
+    margin-bottom: 20vh;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Edu";
+    color: #fff;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    animation: test 1s linear alternate-reverse infinite;
+}
+
+@keyframes test {
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.standby {
+    animation: standby 2s forwards
+}
+
+@keyframes standby {
+    to {
+        filter: brightness(100%);
+    }
+}
+
+
+/* --------------------------------------------- */
+
+.page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.page form .barre {
+    margin-top: 20vh;
+    width: 500px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px #B62140 solid;
+    background: transparent;
+    color: #fff;
+    z-index: 2;
+}
+
+.page form .barre:focus {
+    border-bottom: 2px #fc0032 solid;
+}
+
+h1 {
+    color: blue;
+}
