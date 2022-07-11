@@ -27,7 +27,6 @@ function door() {
         x++;
         timer = setTimeout(door, 1000);
     }
-    console.log(x)
 }
 
 window.addEventListener('mousemove', function() {
